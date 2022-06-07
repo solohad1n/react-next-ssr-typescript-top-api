@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": [ // Покажет предупреждение если не поставить ;
+      "warn"
+    ],
+    "@typescript-eslint/no-empty-interface": [ // Покажет ошибку при пустом интефейсе
+      "error",
+      {
+        "allowSingleExtends": true // Делаем исключение что если интерфейс делает наследование другого, то можно пропускать.
+      }
+    ]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
+}
