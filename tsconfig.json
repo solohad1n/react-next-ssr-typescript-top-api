@@ -22,6 +22,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
+    "svg.d.ts",
     "**/*.tsx",
     "pages/_app.jsx"
   ],
