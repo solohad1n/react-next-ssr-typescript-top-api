@@ -4,7 +4,7 @@ import styles from './Button.module.css'
 import { IButtonProps } from './Button.props';
 import ArrowIcon from './arrow.svg'
 
-const Button = ({
+export const Button = ({
   appearance,
   children,
   className,
@@ -28,5 +28,3 @@ const Button = ({
     )}
   </button >
 };
-
-export default Button
